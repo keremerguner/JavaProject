@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="oopIntro.ProductManager"/>
     <fullyQualifiedTypeName name="oopIntro.Product"/>
+    <fullyQualifiedTypeName name="oopIntro.Category"/>
+    <fullyQualifiedTypeName name="inheritance.Customer"/>
+    <fullyQualifiedTypeName name="inheritance.IndividualCustomer"/>
 </qualifiedTypeNameHistroy>

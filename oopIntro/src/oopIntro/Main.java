@@ -1,46 +1,36 @@
 package oopIntro;
 
-//snipped kullanýmý sys + ctrl+space
+//snipped kullanýmý sys + ctrl + space
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Product product1 = new Product(1, "Lenovo V14", 15000, "16 GB Ram"); // Ornek , referans , instance olusturma
+		Product product1 = new Product(1, "Lenovo V14", 15000, "16 GB Ram", 10); // Ornek , referans , instance olusturma
 
+			
 		Product product2 = new Product();
-		product2.id = 1;
-		product2.name = "Lenovo V15";
-		product2.unitPrice = 20000;
-		product2.detail = "32 GB Ram";
-
-		Product product3 = new Product();
-		product3.id = 1;
-		product3.name = "Hp 5";
-		product3.unitPrice = 17000;
-		product3.detail = "8 GB Ram";
-
-		Product[] products = { product1, product2, product3 };
-
-		for (Product product : products) {
-
-			System.out.println(product.name);
-		}
-
-		System.out.println(products.length);
-
+		product2.setId(2);
+		product2.setName("Hp 3H821EA");
+		product2.setDetail("Laptop");
+		product2.setDiscount(10);
+		product2.setUnitPrice(16000);
+		
+		System.out.println(product2.getUnitPriceAfterDiscount());
+		
 		Category category1 = new Category();
-		category1.id = 1;
-		category1.name = "Bilgisayar";
-
+		category1.setId(1);
+		category1.setName("Yiyecek");
+		
 		Category category2 = new Category();
-		category2.id = 2;
-		category2.name = "Ev/Bahce";
-
-		ProductManager productManager = new ProductManager();
-		productManager.addToCart(product1);
-		productManager.addToCart(product2);
-		productManager.addToCart(product3);
+		category2.setId(2);
+		category2.setName("Icecek");
+		
+		System.out.println(category1.getName());
+		System.out.println(category2.getName());
+		
+		
+		
 
 	};
 
